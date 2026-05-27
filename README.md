@@ -83,6 +83,22 @@ Concepts Used:
 - Try-Except
 
 ---
+## 4. Banking System CLI
+
+Features:
+- Create Account
+- Deposit Money
+- Withdraw Money
+- Check Balance
+
+Concepts Used:
+- OOP
+- Classes & Objects
+- Lists
+- Loops
+- File Handling
+- Exception Handling
+
 
 # Goals
 - Master Python
