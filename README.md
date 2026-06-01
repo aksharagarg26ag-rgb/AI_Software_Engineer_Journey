@@ -1,7 +1,7 @@
 # AI Software Engineer Journey 🚀
 
 This repository documents my learning journey toward becoming an AI Software Engineer.
-It contains Python practice, DSA solutions, mini projects, NumPy practice, and AI engineering foundations.
+It contains Python practice, DSA solutions, mini projects, NumPy practice, Pandas projects, and AI engineering foundations.
 
 ---
 
@@ -47,7 +47,24 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, and A
 * Indexing
 * Slicing
 * Array Operations
-* Sum / Mean / Max
+* Reshaping
+* Broadcasting
+* Statistical Operations
+* Random Module
+
+## Pandas
+
+* Series
+* DataFrame
+* Reading CSV Files
+* Head()
+* Tail()
+* Shape
+* Info()
+* Describe()
+* Data Filtering
+* Value Counts
+* Data Analysis
 
 ## DSA Topics
 
@@ -132,6 +149,48 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, and A
 
 ---
 
+## 5. Student Result Analyzer
+
+### Features
+
+* Read CSV File
+* Calculate Average Marks
+* Find Highest Scorer
+* Find Lowest Scorer
+* Find Subject Topper
+
+### Concepts Used
+
+* Pandas
+* CSV Handling
+* Data Analysis
+* DataFrame Operations
+
+---
+
+## 6. Netflix Data Analyzer
+
+### Features
+
+* Total Movies Count
+* Total TV Shows Count
+* Latest Release Year
+* Oldest Release Year
+* Top 10 Countries
+* Top 10 Ratings
+* Most Common Genre
+
+### Concepts Used
+
+* Pandas
+* Data Cleaning
+* CSV Handling
+* Value Counts
+* Filtering
+* Data Analysis
+
+---
+
 # DSA Practice 🚀
 
 ## Hashing
@@ -139,11 +198,39 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, and A
 1. Two Sum
 2. Valid Anagram
 3. Contains Duplicate
+4. Majority Element
+5. Top K Frequent Elements
 
 ## Sliding Window
 
 1. Maximum Average Subarray I
 2. Longest Substring Without Repeating Characters
+
+---
+
+# Machine Learning Journey
+
+### Completed
+
+* Python for AI
+* NumPy Basics
+* Pandas Basics
+* Data Analysis Projects
+
+### Currently Learning
+
+* DSA for Interviews
+* APIs
+* Machine Learning Foundations
+
+### Upcoming
+
+* Scikit-Learn
+* Machine Learning Projects
+* AI Applications
+* FastAPI
+* LLM Engineering
+* RAG Applications
 
 ---
 
@@ -160,6 +247,8 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, and A
 
 # Author
 
-Akshara Garg
-BTech CSE 
+**Akshara Garg**
+
+BTech CSE (Data Science)
+
 Bennett University
