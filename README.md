@@ -1,27 +1,29 @@
 # AI Software Engineer Journey 🚀
 
-This repository documents my learning journey toward becoming an AI Software Engineer.
-It contains Python practice, DSA solutions, mini projects, NumPy practice, Pandas projects, and AI engineering foundations.
+Welcome to my AI Software Engineer learning journey repository. This repository documents my progress in Python, Data Structures & Algorithms (DSA), Data Analysis, Machine Learning, and AI Engineering through hands-on projects and practical implementations.
 
 ---
 
-# Tech Stack & Skills
+# 👨‍💻 About Me
+
+**Akshara Garg**
+B.Tech CSE (Data Science)
+Bennett University
+
+Currently learning AI, Machine Learning, Data Structures & Algorithms, and Software Engineering fundamentals while building real-world projects.
+
+---
+
+# 🛠️ Tech Stack & Skills
 
 ## Python Fundamentals
 
-* Variables
-* Data Types
-* Lists
-* Tuples
-* Sets
-* Dictionaries
-
-## Python Intermediate
-
+* Variables & Data Types
+* Lists, Tuples, Sets, Dictionaries
+* Conditional Statements
 * Loops
 * Functions
-* Arguments
-* Return Statements
+* Arguments & Return Values
 * List Comprehensions
 * Lambda Functions
 
@@ -35,18 +37,15 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 
 ## File Handling & Exception Handling
 
-* Read Files
-* Write Files
-* Append Files
-* Try-Except
-* Finally
+* Read, Write & Append Files
+* Try-Except Blocks
+* Finally Block
+* Error Handling
 
 ## NumPy
 
 * Arrays
-* Indexing
-* Slicing
-* Array Operations
+* Indexing & Slicing
 * Reshaping
 * Broadcasting
 * Statistical Operations
@@ -54,36 +53,56 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 
 ## Pandas
 
-* Series
-* DataFrame
+* Series & DataFrames
 * Reading CSV Files
-* Head()
-* Tail()
-* Shape
-* Info()
-* Describe()
+* Data Exploration
+* head()
+* tail()
+* shape
+* info()
+* describe()
 * Data Filtering
-* Value Counts
-* Data Analysis
+* value_counts()
+* Data Cleaning
+* isnull()
+* fillna()
+* dropna()
+* duplicated()
+* drop_duplicates()
 
-## DSA Topics
+## Machine Learning (Beginner)
 
-* Arrays
-* Hashing
-* Sliding Window
-* Two Pointers
+* Supervised Learning Pipeline
+* Feature Selection (X)
+* Target Variable (y)
+* Train-Test Split
+* Linear Regression
+* Model Training
+* Prediction
+* Model Evaluation
+* Mean Absolute Error (MAE)
+
+## Data Structures & Algorithms
+
+### Arrays
+
+### Hashing
+
+### Sliding Window
+
+### Two Pointers
 
 ---
 
-# Projects Built
+# 🚀 Projects Built
 
 ## 1. CLI To-Do App
 
 ### Features
 
-* Add Task
+* Add Tasks
 * View Tasks
-* Remove Task
+* Remove Tasks
 
 ### Concepts Used
 
@@ -106,9 +125,8 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 
 * OOP
 * Classes & Objects
-* Lists
-* Loops
 * Encapsulation
+* Lists
 
 ---
 
@@ -117,7 +135,7 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 ### Features
 
 * Add Expense
-* Save to File
+* Save Expenses to File
 * View Expenses
 
 ### Concepts Used
@@ -141,9 +159,6 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 ### Concepts Used
 
 * OOP
-* Classes & Objects
-* Lists
-* Loops
 * File Handling
 * Exception Handling
 
@@ -153,18 +168,18 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 
 ### Features
 
-* Read CSV File
+* Read CSV Dataset
 * Calculate Average Marks
 * Find Highest Scorer
 * Find Lowest Scorer
-* Find Subject Topper
+* Find Subject Toppers
 
 ### Concepts Used
 
 * Pandas
 * CSV Handling
+* DataFrames
 * Data Analysis
-* DataFrame Operations
 
 ---
 
@@ -183,72 +198,52 @@ It contains Python practice, DSA solutions, mini projects, NumPy practice, Panda
 ### Concepts Used
 
 * Pandas
-* Data Cleaning
-* CSV Handling
-* Value Counts
-* Filtering
 * Data Analysis
+* Filtering
+* value_counts()
 
 ---
 
-# DSA Practice 🚀
+## 7. Netflix Data Cleaning Project
 
-## Hashing
+### Features
 
-1. Two Sum
-2. Valid Anagram
-3. Contains Duplicate
-4. Majority Element
-5. Top K Frequent Elements
+* Find Missing Values
+* Count Missing Values
+* Fill Missing Values
+* Remove Missing Records
+* Detect Duplicate Rows
+* Remove Duplicate Rows
 
-## Sliding Window
+### Concepts Used
 
-1. Maximum Average Subarray I
-2. Longest Substring Without Repeating Characters
+* isnull()
+* fillna()
+* dropna()
+* duplicated()
+* drop_duplicates()
 
 ---
 
-# Machine Learning Journey
+## 8. Student Score Predictor (Machine Learning)
 
-### Completed
+### Features
 
-* Python for AI
-* NumPy Basics
-* Pandas Basics
-* Data Analysis Projects
+* Read CSV Dataset
+* Train-Test Split
+* Linear Regression Model
+* Score Prediction
+* Model Evaluation
 
-### Currently Learning
-
-* DSA for Interviews
-* APIs
-* Machine Learning Foundations
-
-### Upcoming
+### Concepts Used
 
 * Scikit-Learn
-* Machine Learning Projects
-* AI Applications
-* FastAPI
-* LLM Engineering
-* RAG Applications
+* Pandas
+* Linear Regression
+* train_test_split()
+* fit()
+* predict()
+* mean_absolute_error()
 
 ---
 
-# Current Learning Goals
-
-* Strengthen DSA & Problem Solving
-* Build Real AI Applications
-* Learn APIs & Backend Basics
-* Learn Machine Learning Foundations
-* Become Internship Ready
-* Become AI Software Engineer
-
----
-
-# Author
-
-**Akshara Garg**
-
-BTech CSE (Data Science)
-
-Bennett University
