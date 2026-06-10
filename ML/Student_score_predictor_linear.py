@@ -13,8 +13,9 @@ X_train,X_test,Y_train, Y_test = train_test_split(X,Y, test_size=0.2, random_sta
 model= LinearRegression()
 model.fit(X_train, Y_train)
 
-prediction= model.predict([[9]])
-print(prediction)
+n= float(input("Enter hours: "))
+prediction= model.predict([[n]])
+print("Predicted Score:", prediction)
 
 Y_pred= model.predict(X_test)
 
