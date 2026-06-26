@@ -39,7 +39,7 @@ X_test= scaler.transform(X_test)
 
 model= LogisticRegression()
 model.fit(X_train, Y_train)
-
+ 
 Y_pred= model.predict(X_test)
 
 accuracy= accuracy_score(Y_test, Y_pred)
@@ -51,3 +51,33 @@ print(confusion_matrix(Y_test, Y_pred))
 
 from sklearn.metrics import classification_report
 print(classification_report(Y_test,Y_pred ))
+
+#Feature Engineering: 
+#FamilySize feature
+df["FamilySize"] = df["SibSp"] + df["Parch"] + 1
+survival_rate = df.groupby("FamilySize")["Survived"].mean()
+print(survival_rate)
+
+#Survival rate by Passenger Class
+survival = df.groupby("Pclass")["Survived"].mean()
+print(survival) 
+
+
+#Random Forest Classifier
+from sklearn.ensemble import RandomForestClassifier
+
+X = df[["Pclass","Age","Fare"]]
+Y = df["Survived"]
+
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+rf= RandomForestClassifier(n_estimators=100, random_state=42)
+rf.fit(X_train, Y_train)
+
+predictions= rf.predict(X_test)
+print(predictions)
+Y_pred_rf= rf.predict(X_test)
+
+accuracy_rf= accuracy_score(Y_test, Y_pred_rf)
+print("Random Forest Accuracy: ", accuracy_rf*100, "%")
+
+

@@ -17,18 +17,19 @@ print(df["release_year"].min())
 import matplotlib.pyplot as plt
 
 # Top 10 Countries
-
+plt.subplot(1, 2, 1)
 plt.bar(df["country"].value_counts().head(10).index, df["country"].value_counts().head(10).values)
 plt.title("Top 10 Countries")
 plt.xlabel("Country")
 plt.ylabel("Count")
-
+plt.xticks(rotation=45)
+plt.show()
 
 # Top Ratings
-
+plt.subplot(1, 2, 2)
 plt.bar(df["rating"].value_counts().head(10).index, df["rating"].value_counts().head(10).values)
 plt.title("Top 10 Ratings")
 plt.xlabel("Rating")
 plt.ylabel("Count")
-
+plt.xticks(rotation=45)
 plt.show()
