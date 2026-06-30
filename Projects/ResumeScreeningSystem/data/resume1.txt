@@ -1,0 +1,23 @@
+Name: Akshara Garg
+
+Skills:
+Python
+Machine Learning
+Deep Learning
+FastAPI
+Streamlit
+Pandas
+NumPy
+Scikit-Learn
+SQL
+Git
+GitHub
+
+Projects:
+Loan Approval Prediction System
+Resume Screening System
+
+Experience:
+Built machine learning applications using Python.
+Developed REST APIs using FastAPI.
+Created interactive web applications using Streamlit.

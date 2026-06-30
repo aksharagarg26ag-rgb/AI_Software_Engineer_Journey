@@ -1,0 +1,22 @@
+Job Title:
+Machine Learning Engineer
+
+Required Skills:
+
+Python
+Machine Learning
+Deep Learning
+FastAPI
+Scikit-Learn
+Pandas
+NumPy
+SQL
+Git
+
+Responsibilities:
+
+Develop machine learning models.
+Build APIs using FastAPI.
+Deploy AI applications.
+Work on data preprocessing.
+Collaborate with engineering teams.

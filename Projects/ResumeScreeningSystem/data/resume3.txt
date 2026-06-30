@@ -1,0 +1,22 @@
+Name: Priya Singh
+
+Skills:
+Python
+Data Science
+Machine Learning
+Statistics
+Pandas
+NumPy
+Matplotlib
+Seaborn
+SQL
+Power BI
+
+Projects:
+Sales Prediction
+Customer Churn Prediction
+
+Experience:
+Performed data analysis.
+Built predictive machine learning models.
+Created dashboards using Power BI.
