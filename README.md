@@ -1,387 +1,205 @@
-# AI Software Engineer Journey 🚀
+# 🚀 AI Software Engineer Journey
 
-This repository documents my journey toward becoming an AI Software Engineer.
+Welcome to my AI Software Engineering learning repository.
 
-It contains Python programming, Data Structures & Algorithms, Data Analysis, Machine Learning projects, SQL practice, and AI engineering foundations.
+This repository documents my hands-on journey toward becoming an **AI Software Engineer**, covering Python, Machine Learning, APIs, Streamlit, FastAPI, Data Analysis, and Deployment concepts through practical projects.
 
 ---
 
-# Tech Stack & Skills
+# 📚 Topics Covered
 
-## Python Fundamentals
-
-- Variables
-- Data Types
-- Lists
-- Tuples
-- Sets
-- Dictionaries
-
-## Python Intermediate
-
+## Python
+- Variables & Data Types
+- Operators
+- Conditional Statements
 - Loops
 - Functions
-- Arguments
-- Return Statements
-- List Comprehensions
-- Lambda Functions
-
-## Object-Oriented Programming (OOP)
-
-- Classes & Objects
-- Constructors
-- Inheritance
-- Polymorphism
-- Encapsulation
-
-## File Handling & Exception Handling
-
-- Read Files
-- Write Files
-- Append Files
-- Try-Except
-- Finally
+- Modules & Packages
+- Exception Handling
+- File Handling
+- Object-Oriented Programming (OOP)
 
 ---
 
-# NumPy
-
+## NumPy
 - Arrays
-- Indexing
-- Slicing
-- Reshaping
+- Array Operations
+- Indexing & Slicing
+- Mathematical Functions
+- Statistics
 - Broadcasting
-- Statistical Operations
-- Random Module
 
 ---
 
-# Pandas
-
-## Basics
-
-- Series
-- DataFrame
-- Reading CSV Files
-- head()
-- tail()
-- shape
-- info()
-- describe()
-
-## Data Analysis
-
-- Filtering
-- value_counts()
-- groupby()
-- agg()
-- apply()
-- sort_values()
-
-## Data Cleaning
-
-- isnull()
-- fillna()
-- dropna()
-- duplicated()
-- drop_duplicates()
-
-## Data Preprocessing
-
-- Handling Missing Values
-- Categorical Encoding
-- pd.get_dummies()
-- Feature Scaling
-
----
-
-# SQL
-
-- SELECT
-- WHERE
-- ORDER BY
-- GROUP BY
-- HAVING
-- INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
-- UNION
-
----
-
-# Machine Learning
-
-## Supervised Learning
-
-### Regression
-
-- Linear Regression
-- Train-Test Split
-- Predictions
-- Mean Absolute Error (MAE)
-
-### Classification
-
-- Logistic Regression
-- Sigmoid Function
-- Probability Threshold
-- Decision Boundary
-
-### Model Evaluation
-
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-- Classification Report
-
-### Data Preprocessing
-
-- Missing Value Handling
-- Feature Scaling
-- StandardScaler
-- MinMaxScaler
-- One-Hot Encoding
-
----
-
-# Projects Built
-
-## 1. CLI To-Do App
-
-### Features
-
-- Add Task
-- View Tasks
-- Remove Task
-
-### Concepts Used
-
-- Lists
-- Functions
-- Loops
-
----
-
-## 2. Smart Student Management System
-
-### Features
-
-- Add Student
-- View Student
-- Search Student
-- Delete Student
-
-### Concepts Used
-
-- OOP
-- Encapsulation
-- Lists
-- Loops
-
----
-
-## 3. Expense Tracker
-
-### Features
-
-- Add Expense
-- Save to File
-- View Expenses
-
-### Concepts Used
-
-- File Handling
-- Exception Handling
-
----
-
-## 4. Banking System CLI
-
-### Features
-
-- Create Account
-- Deposit Money
-- Withdraw Money
-- Check Balance
-
-### Concepts Used
-
-- OOP
-- File Handling
-- Exception Handling
-
----
-
-## 5. Student Result Analyzer
-
-### Features
-
-- Read CSV File
-- Average Marks
-- Highest Scorer
-- Lowest Scorer
-- Subject Topper
-
-### Concepts Used
-
-- Pandas
-- CSV Handling
-- Data Analysis
-
----
-
-## 6. Netflix Data Analyzer V1
-
-### Features
-
-- Total Movies
-- Total TV Shows
-- Latest Release Year
-- Oldest Release Year
-- Top Countries
-- Top Ratings
-- Most Common Genre
-
-### Concepts Used
-
-- Pandas
-- Data Analysis
-- value_counts()
-
----
-
-## 7. Netflix Data Cleaning Project
-
-### Features
-
-- Missing Value Detection
-- Missing Value Handling
-- Duplicate Detection
-- Duplicate Removal
-
-### Concepts Used
-
-- isnull()
-- fillna()
-- dropna()
-- duplicated()
-- drop_duplicates()
-
----
-
-## 8. Netflix Data Analyzer V2
-
-### Features
-
-- Top Countries
-- Top Directors
-- Content by Year
-- Content by Rating
-- Interactive Menu System
-
-### Concepts Used
-
-- groupby()
-- apply()
-- sort_values()
-- Data Analysis
-
----
-
-## 9. Student Score Predictor (Linear Regression)
-
-### Features
-
-- Predict Student Score
-- User Input Based Prediction
-- Model Evaluation
-
-### Concepts Used
-
-- Linear Regression
-- Train-Test Split
-- MAE
-
----
-
-## 10. Student Score Predictor (Logistic Regression)
-
-### Features
-
-- Predict Pass / Fail
-- Probability Prediction
-- Classification Metrics
-
-### Concepts Used
-
-- Logistic Regression
-- Sigmoid Function
-- Classification
-
----
-
-## 11. Loan Approval Predictor
-
-### Features
-
-- Income-Based Prediction
-- Approval Probability
-- Classification Model
-
-### Concepts Used
-
-- Logistic Regression
-- Classification
-- Probability Prediction
-
----
-
-## 12. Titanic Survival Predictor
-
-### Features
-
+## Pandas
+- Series & DataFrames
 - Data Cleaning
 - Missing Value Handling
-- Feature Encoding
-- Feature Scaling
-- Logistic Regression
-- Survival Prediction
-- Accuracy Evaluation
-- Confusion Matrix
-- Classification Report
-
-### Concepts Used
-
-- Pandas
-- Data Preprocessing
-- StandardScaler
-- Logistic Regression
-- Classification Metrics
+- Filtering
+- Sorting
+- GroupBy
+- Merging
+- Feature Selection
 
 ---
 
-## 13. Student Score Data Visualization
-
-### Features
-
-- Line Chart
-- Bar Chart
-- Histogram
-- Regression Line Visualization
-
-### Concepts Used
-
+## Data Visualization
 - Matplotlib
-- Data Visualization
+- Line Charts
+- Bar Charts
+- Histograms
+- Scatter Plots
+- Pie Charts
 
 ---
 
-# Author
+## Machine Learning
+- ML Workflow
+- Data Preprocessing
+- Feature Engineering
+- Train-Test Split
+- Model Training
+- Model Evaluation
+- Saving Models using Joblib
 
-**Akshara Garg**
+---
 
-B.Tech CSE (Data Science)
+## ML Algorithms Implemented
+- Linear Regression
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
 
-Bennett University
+---
+
+## Machine Learning Projects
+
+### Student Score Prediction
+Predicts student scores using Linear Regression.
+
+### Loan Approval Prediction
+Predicts whether a loan application should be approved.
+
+### Titanic Survival Prediction
+Predicts passenger survival using the Titanic dataset.
+
+---
+
+# 🌐 Streamlit
+
+Built interactive web applications including:
+
+- User Input Forms
+- Prediction Interface
+- Displaying Results
+- Model Integration
+- Streamlit Widgets
+
+---
+
+# ⚡ FastAPI
+
+Implemented REST APIs for Machine Learning models.
+
+Covered:
+
+- FastAPI Basics
+- GET Requests
+- POST Requests
+- Path Parameters
+- JSON Requests
+- Pydantic Models
+- Swagger Documentation
+- API Testing
+
+---
+
+# 🔗 Streamlit + FastAPI Integration
+
+Implemented a production-style architecture:
+
+```
+User
+   │
+   ▼
+Streamlit Frontend
+   │
+HTTP Request
+   │
+   ▼
+FastAPI Backend
+   │
+Machine Learning Model
+   │
+Prediction
+   │
+   ▼
+Streamlit Output
+```
+
+Used:
+
+- requests library
+- JSON communication
+- REST APIs
+
+---
+
+
+
+# 🛠 Technologies Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Joblib
+- FastAPI
+- Uvicorn
+- Streamlit
+- Requests
+- VS Code
+- Git
+- GitHub
+
+
+# 📖 Learning Outcome
+
+Through this repository I learned:
+
+- Python Programming
+- Data Analysis
+- Data Visualization
+- Machine Learning Workflow
+- Model Building
+- Model Serialization
+- REST APIs
+- FastAPI Development
+- Streamlit Development
+- API Integration
+- Project Structure
+- Git & GitHub Workflow
+
+---
+
+
+# 📈 Upcoming Topics
+
+- SQL
+- Advanced Machine Learning
+- Feature Engineering
+- Model Deployment
+- Docker
+- AWS
+- CI/CD
+- Deep Learning
+- NLP
+- Computer Vision
+- MLOps
+- System Design for AI
+
+---
+
+
+⭐ This repository is continuously updated as I progress in my AI Software Engineering journey.
