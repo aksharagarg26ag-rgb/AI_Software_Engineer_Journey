@@ -3,10 +3,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Read files
 
-with open("Projects/resumeScreeningSystem/data/resume1.txt","r") as file:
+with open("Projects/ResumeScreeningSystem/data/resume3.txt","r") as file:
     resume= file.read()
 
-with open("Projects/resumeScreeningSystem/data/job_description.txt","r") as file:
+with open("Projects/ResumeScreeningSystem/data/job_description.txt","r") as file:
     job_description= file.read()
 
 
