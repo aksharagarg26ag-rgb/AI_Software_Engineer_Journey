@@ -3,54 +3,54 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-stop_words = set(stopwords.words("english"))
-lemmatizer = WordNetLemmatizer()
+class ResumeProcessor:  #class is made so that we can excess all features together easily
+    def __init__(self):  #made bcoz not every time we will create list of stop words and lemmatizer,they are now initialized once inside __init__():
+        self.stop_words = set(stopwords.words("english"))
+        self.lemmatizer = WordNetLemmatizer()
 
-with open("Projects/resumeScreeningSystem/data/resume1.txt","r") as file:
-    resume= file.read()
+    def clean_text(self, text):
+        # Lowercase
+        text = text.lower()
 
-with open("Projects/resumeScreeningSystem/data/job_description.txt","r") as file:
-    job_description= file.read()
+        # Remove emails
+        text = re.sub(r"\S+@+\S", "", text)
 
-def clean_text(text):
-    #lowercase
-    text = text.lower()
+        # Remove numbers
+        text = re.sub(r"\d+", "", text)
 
-    #Remove emails
-    text=  re.sub(r"\S+@+\S","",text)
+        # Remove special characters
+        text = re.sub(r"[^a-zA-Z\s]", "", text)
 
-    #Remove numbers
-    text=  re.sub(r"\d+","",text)
+        # Tokenize
+        tokens = word_tokenize(text)
 
-    #Remove special character
-    text=  re.sub(r"[^a-zA-Z\s]","",text)
+        filtered_words = []
 
-    #Tokenize
-    tokens = word_tokenize(text)
+        for word in tokens:
+            if word.isalpha() and word not in self.stop_words:
+                filtered_words.append(self.lemmatizer.lemmatize(word, pos="v"))
 
-    filtered_words = []
+        return " ".join(filtered_words)
 
-    for word in tokens:
 
-        if word.isalpha():
+# with open("Projects/resumeScreeningSystem/data/resume1.txt","r") as file:
+#     resume= file.read()
 
-            if word not in stop_words:
+# with open("Projects/resumeScreeningSystem/data/job_description.txt","r") as file:
+#     job_description= file.read()
 
-                filtered_words.append(
-                    lemmatizer.lemmatize(word, pos="v")
-                )
+    
+# processor = ResumeProcessor()
 
-    return " ".join(filtered_words)
+# clean_resume= processor.clean_text(resume)
+# clean_job= processor.clean_text(job_description)
 
-clean_resume= clean_text(resume)
-clean_job= clean_text(job_description)
+# print("  ")
+# print("Cleaned Resume")
+# print("  ")
+# print(clean_resume)
 
-print("  ")
-print("Cleaned Resume")
-print("  ")
-print(clean_resume)
-
-print("  ")
-print("Cleaned job Description")
-print("  ")
-print(clean_job)
+# print("  ")
+# print("Cleaned job Description")
+# print("  ")
+# print(clean_job)

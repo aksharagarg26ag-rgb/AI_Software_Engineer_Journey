@@ -53,47 +53,38 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import joblib
+from log.logger import logger
+from sklearn.pipeline import Pipeline
 
+#Load Dataset
+df = pd.read_csv("data/loan_data.csv")
+logger.info("Dataset loaded successfully!")
 
-df = pd.read_csv("loan_data.csv")
-print(df.shape)
-
-print(df["approved"].value_counts())
+#Train Model
 X= df[["income","age","credit_score","employment_years"]]
 Y=df["approved"]
 
 X_train,X_test,Y_train,Y_test= train_test_split(X,Y, test_size=0.2, random_state=42)
 
-rf = RandomForestClassifier(n_estimators=100, random_state=42)
-rf.fit(X_train,Y_train)
+loan_pipeline = Pipeline([
+    (
+        "model",
+        RandomForestClassifier(
+            n_estimators=100,
+            random_state=42
+        )
+    )
+])
+loan_pipeline.fit(X_train,Y_train)
+logger.info("Model trained successfully!")
 
-
-Y_pred= rf.predict(X_test)
+#Evaluate
+Y_pred= loan_pipeline.predict(X_test)
 accuracy= accuracy_score(Y_test,Y_pred)
-print("Accuracy : " ,accuracy * 100, "%")
+logger.info(f"Model Accuracy : {accuracy * 100}%")
 
-income= float(input("Enter income: "))
-age= int(input("Enter age: "))
-credit_score= int(input("Enter CreditScore: "))
-employment_years = int(input("Enter EmploymentYears: "))
-new_data = pd.DataFrame({
-    "income": [income],
-    "age": [age],
-    "credit_score": [credit_score],
-    "employment_years": [employment_years]
-})
+#Save Model
+joblib.dump(loan_pipeline,"models/loan_pipeline.joblib")
+logger.info("Model saved successfully!")
 
-
-prediction = rf.predict(new_data)
-if prediction[0]==1:
-    print("Approved")
-
-else:
-    print("Not Approved")
-
-probability = rf.predict_proba(new_data)
-print("Probability" ,probability)
-
-
-joblib.dump(rf,"loan_data_rf.joblib")
-print("Model Saved")
+#to run this file open new terminal and run the command:  cd Projects/LoanApprovalSystem.py/backend and then python train_model.py

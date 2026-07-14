@@ -1,0 +1,52 @@
+# # # # import logging
+
+# # # # logging.basicConfig(level=logging.INFO)
+
+# # # # logging.info("Program Started")
+
+# # # # print("Hello")
+
+# # # # logging.info("Program Ended")
+
+# # # import logging
+
+# # # logging.basicConfig(level=logging.DEBUG)
+
+# # # logging.debug("Debug Message")
+
+# # # logging.info("Information")
+
+# # # logging.warning("Warning")
+
+# # # logging.error("Error")
+
+# # # logging.critical("Critical")
+
+
+# # import logging
+
+# # logging.basicConfig(
+# #     filename="app.log",
+# #     level=logging.INFO
+# # )
+
+# # logging.info("Application Started")
+# # logging.info("Model Loaded")
+
+# import logging
+
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format="%(asctime)s | %(levelname)s | %(message)s"
+# )
+
+# logging.info("Model Loaded")
+
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
+try:
+    result = 10 / 0
+except Exception:
+    logging.exception("An error occurred")

@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
+from logs.logger import logger
 
-np.random.seed(42)
+np.random.seed(42) #every time when run the code, it will generate the same random numbers.
 
 rows = []
+logger.info("Generating dataset...")
 
 for i in range(1000):
 
@@ -12,10 +14,14 @@ for i in range(1000):
     credit_score = np.random.randint(300, 850)
     employment_years = np.random.randint(0, 20)
 
+    MIN_INCOME = 40000
+    MIN_CREDIT_SCORE = 600
+    MIN_EMPLOYMENT_YEARS = 2
+
     if (
-    income >= 40000
-    and credit_score >= 600
-    and employment_years >= 2
+    income >= MIN_INCOME
+    and credit_score >= MIN_CREDIT_SCORE
+    and employment_years >= MIN_EMPLOYMENT_YEARS
     ):
         approved = np.random.choice([1, 1, 1, 0])
     else:
@@ -42,6 +48,7 @@ df = pd.DataFrame(
 
 df.to_csv("loan_data.csv", index=False)
 
+logger.info("Dataset generated and saved!")
+
 print(df.head())
 print(df["approved"].value_counts())
-print("Dataset Saved!")
