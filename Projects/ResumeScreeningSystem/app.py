@@ -1,8 +1,8 @@
 from src.preprocessing import ResumeProcessor
 from src.vectorizer import ResumeVectorizer
-from src.similarity import SimilarityCalculator
-from src.skills import SkillExtractor
-from src.sentence_embedding import ResumeVectorizerSentenceEmbedding
+from src.vector_search import SimilarityCalculator
+from src.skill_analysis import SkillExtractor
+from src.embedding import SentenceEmbedding
 
 # Read Resume
 with open("Projects/resumeScreeningSystem/data/resume1.txt", "r") as file:
@@ -17,7 +17,7 @@ processor = ResumeProcessor()
 vectorizer = ResumeVectorizer()
 similarity = SimilarityCalculator()
 skills = SkillExtractor()
-sentence_vectorizer = ResumeVectorizerSentenceEmbedding()
+sentence_vectorizer = SentenceEmbedding()
 
 # Clean Text
 clean_resume = processor.clean_text(resume)

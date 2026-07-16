@@ -1,7 +1,7 @@
 #use sentence embedding insted of tf idf 
 from sentence_transformers import SentenceTransformer
 
-class ResumeVectorizerSentenceEmbedding:
+class SentenceEmbedding:
 
     def __init__(self):
         self.model = SentenceTransformer("all-MiniLM-L6-v2")
