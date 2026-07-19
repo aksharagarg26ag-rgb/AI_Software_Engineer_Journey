@@ -3,32 +3,31 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-class ResumeProcessor:  #class is made so that we can excess all features together easily
-    def __init__(self):  #made bcoz not every time we will create list of stop words and lemmatizer,they are now initialized once inside __init__():
-        self.stop_words = set(stopwords.words("english"))
-        self.lemmatizer = WordNetLemmatizer()
 
-    def clean_text(self, text):
+def clean_text(text: str) -> str:
         # Lowercase
         text = text.lower()
 
         # Remove emails
-        text = re.sub(r"\S+@+\S", "", text)
+        text = re.sub(r"\S+@\S+", "", text)
 
         # Remove numbers
         text = re.sub(r"\d+", "", text)
 
         # Remove special characters
-        text = re.sub(r"[^a-zA-Z\s]", "", text)
+        text = re.sub(r"[^a-zA-Z0-9+#\-\s]", " ", text)
 
         # Tokenize
         tokens = word_tokenize(text)
 
         filtered_words = []
 
+        stop_words = set(stopwords.words("english"))
+        lemmatizer = WordNetLemmatizer()
+
         for word in tokens:
-            if word.isalpha() and word not in self.stop_words:
-                filtered_words.append(self.lemmatizer.lemmatize(word, pos="v"))
+            if word.isalpha() and word not in stop_words:
+                filtered_words.append(lemmatizer.lemmatize(word, pos="v"))
 
         return " ".join(filtered_words)
 
