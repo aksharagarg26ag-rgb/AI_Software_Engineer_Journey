@@ -7,6 +7,9 @@ from src.vector_database import VectorDatabase
 from src.retriever import Retriever
 from src.skill_analysis import SkillAnalyzer
 from src.report import ReportGenerator
+from src.prompt_builder import PromptBuilder
+from src.llm_feedback import LLMFeedback
+
     
 
 # Create Objects
@@ -21,6 +24,9 @@ embedding_model = SentenceEmbedding()
 analyzer = SkillAnalyzer()
 
 report_generator = ReportGenerator()
+prompt_builder = PromptBuilder()
+llm = LLMFeedback()
+
 
     
 
@@ -51,24 +57,35 @@ vector_db.add_embeddings(resume_embeddings)
 retriever = Retriever(vector_db)
 
 retrieved_chunks = retriever.retrieve(
-        job_embedding,
-        resume_chunks
-    )
+    job_embedding)
 
-# Compare Skill
-retrieved_text = " ".join(retrieved_chunks)
 analysis = analyzer.analyze(
-    retrieved_text,
-    clean_job
+    resume_text,
+    job_text
 )
 
+prompt = prompt_builder.build_prompt( retrieved_chunks,  job_text)
 
-#Generate Report
-report=report_generator.generate_report(analysis)
+feedback = llm.generate(prompt)
+
+report = report_generator.generate_report(analysis,  feedback)
 
 #Print Report
 print("\n========== ATS REPORT ==========\n")
 
+# for key, value in report.items():
+
+#         print(f"{key} : {value}")
+
+
 for key, value in report.items():
 
-        print(f"{key} : {value}")
+    print()
+
+    print("=" * 50)
+
+    print(key)
+
+    print("=" * 50)
+
+    print(value)
